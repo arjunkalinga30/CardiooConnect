@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title About Us - CardioConnect
+    link(rel='stylesheet', href='/stylesheets/navbar.css')
+    link(rel='stylesheet', href='/stylesheets/about.css')
+
+  body
+    include layout.jade
+
+    //- Header with background
+    header.header-bg
+      h1 About Us
+      p Connecting You to the Best Heart Surgeons and Hospitals At CardioConnect, we understand that navigating the healthcare system can be overwhelming, especially when it comes to critical health concerns like heart health. Our goal is to provide you with the resources and support you need to make informed decisions for yourself or your loved ones.
+          
+
+    //- Main content with grid layout
+    .main-container
+      .left-column
+        section.about-intro
+          h2 Welcome to CardioConnect
+          p Our platform is dedicated to helping patients find the best heart surgeons and hospitals. We aim to provide clear, accurate, and up-to-date information to empower individuals in making informed healthcare decisions.
+          p Whether you're looking for a top-rated heart surgeon or a hospital specializing in specific cardiac procedures, we're here to guide you every step of the way.
+
+        section.mission
+          h2 Our Mission
+          p At CardioConnect, our mission is to bridge the gap between patients and cardiac specialists, offering trusted resources and tools to facilitate their journey towards better heart health.
+          p Our platform offers a simple and effective way to find the right care and ensure quality healthcare for all cardiac patients.
+
+      .right-column
+        section.video
+          h2 Watch Our Journey
+          p Explore how CardioConnect has been helping patients across the globe.
+          video(controls, width="100%", height="auto")
+            source(src="/videos/VID1.mp4", type="video/mp4")
+            | Your browser does not support the video tag.
+
+    //- Full-width gallery with hover effect
+    section.gallery
+      h2 Our Partners and Top Certified Doctors
+      .image-gallery
+        img.gallery-image(src='/images/PART1.png', alt='Hospital 1')
+        img.gallery-image(src='/images/PART3.jpeg', alt='Hospital 2')
+        img.gallery-image(src='/images/DOC1.jpg', alt='Doctor 1')
+        img.gallery-image(src='/images/DOC3.jpg', alt='Doctor 2')
+
+    //- Footer
+    footer.footer
+      p Your journey to better heart health starts with the right information.
+      p &copy; 2024 CardioConnect. All Rights Reserved.

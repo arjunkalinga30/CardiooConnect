@@ -1,0 +1,128 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* You can change this color to better suit the theme */
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #4caf50; /* Green color for Indian hospitals */
+}
+
+header .intro {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Hospital List Section */
+section.hospital-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.hospital {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    width: 80%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hospital:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjusting Image Size */
+.hospital img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Text Styles */
+.hospital h2 {
+    font-size: 2em; /* Larger font for headings */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hospital p {
+    font-size: 1em;
+    line-height: 1.6; /* Improve readability with line height */
+    color: #666;
+}
+
+/* Services List */
+.hospital ul.services {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.hospital ul.services li {
+    margin: 5px 0;
+    font-size: 0.9em; /* Smaller font for services */
+    color: #555; /* Slightly darker color for contrast */
+}
+
+/* Contact and Rating Styles */
+.hospital .contact,
+.hospital .rating {
+    font-size: 0.9em; /* Smaller font for contact and rating */
+    color: #777; /* Lighter color for contact information */
+    margin-top: 10px; /* Space between items */
+}
+
+/* Footer Section */
+footer.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* Same as the USA footer for consistency */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Hospital List Section */
+section.hospital-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically if needed */
+    padding: 20px;
+}
+
+.hospital {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Uniform margin for spacing */
+    padding: 20px;
+    width: 80%; /* Adjust width as needed */
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 800px; /* Optional: Limit the max width for better appearance */
+}
+
+.hospital:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

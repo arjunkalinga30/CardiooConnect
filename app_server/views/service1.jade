@@ -1,0 +1,79 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Cleveland Clinic - Heart Surgery Excellence
+    link(rel='stylesheet', href='/stylesheets/navbar.css')
+    link(rel="stylesheet", href="/stylesheets/styling.css")
+
+  body
+    include layout.jade
+
+    // Header Section
+    header
+      h1 Cleveland Clinic
+      p.intro World-class heart surgery center renowned for exceptional cardiac care.
+
+    // Hospital Information Section
+    section.hospital-info
+      .hospital-img-container
+        img(src='/images/SERV1.jpg', alt='Cleveland Clinic', class='hospital-image')
+
+      .hospital-details
+        h2 About Cleveland Clinic
+        p.description Cleveland Clinic is ranked #1 for heart surgery, offering patients cutting-edge care and innovative solutions for heart disease and surgery.
+        ul.services
+          h3 Services Provided
+          li Coronary Artery Bypass Surgery
+          li Heart Valve Repair and Replacement
+          li Heart Transplantation
+          li Minimally Invasive Cardiac Surgery
+          li Pediatric Heart Surgery
+        p.contact
+          strong Contact Number: +1 216-444-2200
+        p.address
+          strong Location: 9500 Euclid Ave, Cleveland, OH 44195, USA
+        p.rating
+          strong Rating: 
+          span ★★★★★ (4.9/5)
+
+      // New Section: Map and Doctors
+      .additional-info-container
+        // Map Section
+        .map-container
+          h3 Location Map
+          iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.7924590190734!2d-81.62191782470303!3d41.50334824150773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fb4094d9b40f%3A0x8f6722cb74fc0da!2sCleveland%20Clinic!5e0!3m2!1sen!2sus!4v1639075698533!5m2!1sen!2sus", width="400", height="300", style="border:0;", allowfullscreen="", loading="lazy")
+
+        // Doctors Section
+        .doctors-container
+          h3 Doctors at Cleveland Clinic
+          ul.doctors-list
+            li
+              h4 Dr. Marc Gillinov
+              p Role: Cardiac Surgeon, Specialization: Heart Valve Surgery
+            li
+              h4 Dr. Lars Svensson
+              p Role: Chairman of Heart & Vascular Institute, Specialization: Aortic Surgery
+            li
+              h4 Dr. Edward Soltesz
+              p Role: Cardiac Surgeon, Specialization: Heart Transplantation and Ventricular Assist Devices
+            li
+              h4 Dr. Gosta Pettersson
+              p Role: Vice Chairman, Specialization: Pediatric and Congenital Heart Surgery
+
+    // Additional Details Section
+    section.additional-details
+      h2 Why Choose Cleveland Clinic?
+      p Cleveland Clinic offers unparalleled cardiac care with a team of experienced heart surgeons who specialize in the most advanced heart procedures. Their heart surgery program consistently ranks among the top in the world for patient outcomes.
+      ul.extras
+        h3 Highlights:
+        li Over 20,000 heart surgeries performed annually
+        li Leaders in heart transplantation
+        li State-of-the-art operating rooms equipped with the latest technologies
+        li Renowned cardiac research and clinical trials
+
+    // Footer Section
+    footer.footer
+      p Learn more about the best heart surgery hospitals on CardioConnect.
+      p &copy; 2024 CardioConnect. All Rights Reserved.

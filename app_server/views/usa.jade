@@ -1,0 +1,100 @@
+// usa.jade
+doctype html
+html(lang="en")
+  head
+    title Best Hospitals in USA - Cardio Connect
+    link(rel='stylesheet', href='/stylesheets/navbar.css')
+    link(rel='stylesheet', href='/stylesheets/usa.css')
+  body
+    include layout.jade
+
+    // Header Section
+    header
+      h1 Best Hospitals in the USA
+      p.intro Explore the top hospitals for heart surgery in the USA.
+
+    // Hospital List Section
+    section.hospital-list
+      .hospital
+        img(src='/images/SERV1.jpg', alt='Cleveland Clinic', class='hospital-image')
+        h2
+          a(href='/hospitals/cleveland-clinic') Cleveland Clinic
+        p.description Cleveland Clinic is ranked #1 for heart surgery.
+        h3 Services Provided:
+        ul.services
+          li Coronary Artery Bypass Surgery
+          li Heart Valve Repair and Replacement
+          li Heart Transplantation
+          li Minimally Invasive Cardiac Surgery
+        p.contact
+          strong Contact Number: +1 216-444-2200
+        p.email
+          strong Email: 
+          a(href='mailto:info@clevelandclinic.org') info@clevelandclinic.org
+        p.rating
+          strong Rating: 
+          span ★★★★★ (4.9/5)
+
+      .hospital
+        img(src='/images/SERV2.jpg', alt='Mayo Clinic', class='hospital-image')
+        h2
+          a(href='/hospitals/mayo-clinic') Mayo Clinic
+        p.description Mayo Clinic is known for comprehensive heart care.
+        h3 Services Provided:
+        ul.services
+          li Cardiac Catheterization and Angioplasty
+          li Electrophysiology and Arrhythmia Management
+          li Heart Transplantation
+          li Robotic Heart Surgery
+        p.contact
+          strong Contact Number: +1 507-284-2511
+        p.email
+          strong Email: 
+          a(href='mailto:info@mayoclinic.org') info@mayoclinic.org
+        p.rating
+          strong Rating: 
+          span ★★★★★ (4.8/5)
+
+      .hospital
+        img(src='/images/SERV3.jpg', alt='Mount Sinai Hospital', class='hospital-image')
+        h2
+          a(href='/hospitals/mount-sinai-hospital') Mount Sinai Hospital
+        p.description Mount Sinai specializes in innovative heart surgery techniques.
+        h3 Services Provided:
+        ul.services
+          li Transcatheter Aortic Valve Replacement (TAVR)
+          li Adult Congenital Heart Surgery
+          li Vascular and Endovascular Surgery
+          li Pulmonary Thromboendarterectomy
+        p.contact
+          strong Contact Number: +1 212-241-6500
+        p.email
+          strong Email: 
+          a(href='mailto:info@mountsinai.org') info@mountsinai.org
+        p.rating
+          strong Rating: 
+          span ★★★★★ (4.7/5)
+
+      .hospital
+        img(src='/images/SERV5.jpg', alt='Stanford Health Care', class='hospital-image')
+        h2
+          a(href='/hospitals/stanford-health-care') Stanford Health Care
+        p.description Stanford is known for leading research in heart disease.
+        h3 Services Provided:
+        ul.services
+          li Left Ventricular Assist Device (LVAD) Implantation
+          li Complex Coronary Interventions
+          li Advanced Heart Failure Management
+          li Hybrid Coronary Revascularization
+        p.contact
+          strong Contact Number: +1 650-723-4000
+        p.email
+          strong Email: 
+          a(href='mailto:info@stanfordhealthcare.org') info@stanfordhealthcare.org
+        p.rating
+          strong Rating: 
+          span ★★★★★ (4.6/5)
+
+    // Footer Section
+    footer.footer
+      p &copy; 2024 CardioConnect. All Rights Reserved.

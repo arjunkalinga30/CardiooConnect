@@ -1,0 +1,84 @@
+doctype html
+html(lang="en")
+  head
+    title Best Hospitals in India - Cardio Connect
+    link(rel='stylesheet', href='/stylesheets/navbar.css')
+    link(rel='stylesheet', href='/stylesheets/india.css')
+  body
+    include layout.jade
+
+    // Header Section
+    header
+      h1 Best Hospitals in India
+      p.intro Explore the top hospitals for heart surgery in India.
+
+    // Hospital List Section
+    section.hospital-list
+
+      .hospital
+        img(src='/images/ind1.jpg', alt='Apollo Hospitals', class='hospital-image')
+        h2
+          a(href='/hospitals/apollo-hospitals') Apollo Hospitals
+        p.description Apollo Hospitals is a leading cardiac care center in India, offering world-class heart surgery.
+        h3 Services Provided:
+        ul.services
+          li Coronary Artery Bypass Grafting (CABG)
+          li Heart Valve Repair and Replacement
+          li Heart Transplantation
+          li Electrophysiology Procedures
+          li Minimally Invasive Heart Surgery
+        p.contact
+          strong Contact Number: +91 44 2829 0200
+        p.email
+          strong Email: 
+          a(href='mailto:info@apollohospitals.com') info@apollohospitals.com
+        p.rating
+          strong Rating: 
+          span ★★★★★ (4.7/5)
+
+      .hospital
+        img(src='/images/ind2.jpg', alt='Fortis Escorts Heart Institute', class='hospital-image')
+        h2
+          a(href='/hospitals/fortis-escorts-heart-institute') Fortis Escorts Heart Institute
+        p.description Fortis Escorts is known for its excellent cardiac care and highly experienced team of cardiac surgeons.
+        h3 Services Provided:
+        ul.services
+          li Pediatric Cardiac Surgery
+          li Heart Valve Replacement Surgery
+          li Cardiac Electrophysiology and Pacemaker Implantation
+          li Coronary Angioplasty and Stenting
+        p.contact
+          strong Contact Number: +91 11 4171 4171
+        p.email
+          strong Email: 
+          a(href='mailto:info@fortishealthcare.com') info@fortishealthcare.com
+        p.rating
+          strong Rating: 
+          span ★★★★★ (4.5/5)
+
+       // Hospital 2: Narayana Health
+     .hospital
+            img(src='/images/ind3.jpg', alt='Narayana Health', class='hospital-image')
+            h2
+                a(href='/hospitals/narayana-health') Narayana Health
+            p.description Narayana Health is a leading cardiac center in India, providing affordable and high-quality heart surgeries.
+            h3 Services Provided:
+            ul.services
+                li Heart Transplantation
+                li Complex Congenital Heart Surgery
+                li Electrophysiology and Arrhythmia Services
+                li Cardiac Catheterization and Stenting
+            p.contact
+                strong Contact Number: +91 80 2205 2205
+            p.email
+                strong Email: 
+                a(href='mailto:info@narayanahealth.org') info@narayanahealth.org
+            p.rating
+                strong Rating: 
+                span ★★★★★ (4.7/5)
+
+      // Add additional hospitals following the same format as needed
+
+    // Footer Section
+    footer.footer
+      p &copy; 2024 CardioConnect. All Rights Reserved.

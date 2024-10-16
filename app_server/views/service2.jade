@@ -1,0 +1,77 @@
+// app_server/views/mayo-clinic.jade
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Mayo Clinic - Heart Surgery Excellence
+    link(rel='stylesheet', href='/stylesheets/navbar.css')
+    link(rel="stylesheet", href="/stylesheets/styling.css")
+
+  body
+    include layout.jade
+
+    // Header Section
+    header
+      h1 Mayo Clinic
+      p.intro A leader in heart care with a commitment to innovation and excellence.
+
+    // Hospital Information Section
+    section.hospital-info
+      .hospital-img-container
+        img(src='/images/SERV2.jpg', alt='Mayo Clinic', class='hospital-image')
+
+      .hospital-details
+        h2 About Mayo Clinic
+        p.description Mayo Clinic is renowned for its advanced heart care, providing patients with comprehensive treatment options and specialized care in heart surgery.
+        ul.services
+          h3 Services Provided
+          li Coronary Artery Bypass Grafting (CABG)
+          li Heart Valve Repair and Replacement
+          li Aortic Aneurysm Repair
+          li Electrophysiology Procedures
+          li Heart Transplantation
+        p.contact
+          strong Contact Number: +1 507-284-2511
+        p.address
+          strong Location: 200 1st St SW, Rochester, MN 55905, USA
+        p.rating
+          strong Rating: 
+          span ★★★★★ (4.8/5)
+
+    // Map and Doctors Section
+    section.additional-info-container
+        // Map Section
+        .map-container
+            h3 Mayo Clinic Location Map
+            <iframe src="https://maps.google.com/maps?q=Mayo%20Clinic%2C%20Rochester&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        // Doctors Section
+        .doctors-container
+            h3 Doctors at Mayo Clinic
+            ul.doctors-list
+                li
+                    h4 Dr. John Smith
+                    p Cardiothoracic Surgeon Specialized in minimally invasive heart surgery
+                li
+                    h4 Dr. Emily Johnson
+                    p Electrophysiologist – Expert in heart rhythm disorders and ablation procedures
+                li
+                    h4 Dr. Michael Brown
+                    p Heart Transplant Specialist – Leading transplant surgeon with over 500 surgeries
+
+    // Additional Details Section
+    section.additional-details
+      h2 Why Choose Mayo Clinic?
+      p Mayo Clinic is dedicated to providing world-class heart care, combining advanced technology with a personalized approach to treatment. Their heart program is recognized for exceptional patient care and innovative research.
+      ul.extras
+        h3 Highlights:
+        li Over 25,000 heart surgeries performed annually
+        li Experts in minimally invasive heart surgery
+        li Comprehensive heart failure and transplant programs
+        li Strong focus on patient-centered care and outcomes
+
+    // Footer Section
+    footer.footer
+      p Learn more about the best heart surgery hospitals on CardioConnect.
+      p &copy; 2024 CardioConnect. All Rights Reserved.

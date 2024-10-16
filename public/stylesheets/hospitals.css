@@ -1,0 +1,98 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    color: #2d2d2d;
+}
+
+p.intro {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #555;
+}
+
+/* Hospital Grid Styling */
+.hospital-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusts to fit smaller screens */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hospital {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hospital:hover {
+    transform: scale(1.05);
+}
+
+.hospital-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.hospital h2 {
+    font-size: 28px;
+    margin: 20px 0 10px;
+    color: #2d5b7a;
+}
+
+.hospital h6 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.hospital p {
+    font-size: 16px;
+    color: #555;
+}
+
+.hospital ul {
+    text-align: left;
+    margin-top: 15px;
+    padding: 0; /* Remove default padding */
+}
+
+.hospital ul li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Learn More Section */
+p.learn-more {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 60px;
+    color: #2d5b7a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hospital-grid {
+        grid-template-columns: 1fr; /* Stacks hospitals on smaller screens */
+    }
+
+    .hospital {
+        margin-bottom: 30px; /* Add spacing between hospital cards */
+    }
+}

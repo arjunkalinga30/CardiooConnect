@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    title Cardio Connect - Home
+    link(rel="stylesheet", href="/stylesheets/navbar.css")
+    link(rel="stylesheet", href="/stylesheets/style.css") 
+    //- meta(charset="UTF-8")
+    //- meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  
+
+  body
+    include layout.jade 
+
+    // Hero Section with Full Background Image
+    section.hero
+      .hero-background
+        .hero-content
+          h1 Welcome to Cardio Connect
+          p Your comprehensive guide to heart health and fitness.
+          br
+          a.button(href='/about') Get Started 
+
+    // Footer Section
+    //- footer
+      .container
+        p &copy; 2024 Cardio Connect. All rights reserved.

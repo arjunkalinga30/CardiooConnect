@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+  head
+    title Countries - Cardio Connect
+    link(rel='stylesheet', href='/stylesheets/navbar.css')
+    link(rel='stylesheet', href='/stylesheets/countries.css') // Include your CSS here
+  body
+    include layout.jade
+
+    // Header Section
+    header
+      h1 Select a Country to View Best Hospitals
+      p.intro Choose a country below to find top cardiac care hospitals.
+
+    // Country List Section
+    section.country-list
+      .country-cards-container
+        .country-card
+          a(href="/services/germany")
+            img(src='/images/FLAG4.jpg', alt='Germany', class='country-image')
+            h2 Germany
+            p Experience advanced heart surgery options in Germany.
+        .country-card
+          a(href="/services/india")
+            img(src='/images/FLAG5.png', alt='India', class='country-image')
+            h2 India
+            p Discover state-of-the-art heart care in India.
+        .country-card
+          a(href="/services/usa")
+            img(src='/images/FALG1.png', alt='USA', class='country-image')
+            h2 USA
+            p Explore top hospitals and heart surgeons in the USA.
+        .country-card
+          a(href="/services/canada")
+            img(src='/images/FLAG2.avif', alt='Canada', class='country-image')
+            h2 Canada
+            p Experience leading cardiac care options in Canada.
+        .country-card
+          a(href="/services/uk")
+            img(src='/images/FLAG3.png', alt='UK', class='country-image')
+            h2 UK
+            p Discover advanced heart surgery options in the UK.
+        //- .country-card
+          a(href="/services/germany")
+            img(src='/images/FLAG4.jpg', alt='Germany', class='country-image')
+            h2 Germany
+            p Experience advanced heart surgery options in Germany.
+
+    // Footer Section
+    footer.footer
+      p &copy; 2024 CardioConnect. All Rights Reserved.

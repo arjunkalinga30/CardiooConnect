@@ -1,0 +1,104 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/stylesheets/navbar.css') 
+  link(rel="stylesheet", href="/stylesheets/hospitals.css")
+  
+  h1 Featured Heart Surgery Hospitals
+  p.intro Discover the best hospitals providing top cardiac care and advanced heart surgery options.
+
+  // Hospital Grid
+  .hospital-grid
+    // Hospital 1
+    .hospital
+      h2 Cleveland Clinic
+      a(href='/hospitals/cleveland-clinic')
+        img(src='/images/SERV1.jpg', alt='Cleveland Clinic', class='hospital-image')
+      h6 Cleveland Clinic offers cutting-edge heart surgeries and treatments, ranking among the top for cardiac care.
+      p Services:
+        ul
+          li Coronary Artery Bypass Surgery
+          li Heart Valve Repair and Replacement
+          li Aortic Aneurysm Surgery
+          li Minimally Invasive Heart Surgery
+
+    // Hospital 2
+    .hospital
+      h2 Mayo Clinic
+      a(href='/hospitals/mayo-clinic')
+        img(src='/images/SERV2.jpg', alt='Mayo Clinic', class='hospital-image')
+      p Mayo Clinic is known for comprehensive care, offering both surgical and non-surgical solutions to heart conditions.
+      p Services:
+        ul
+          li Cardiac Catheterization and Angioplasty
+          li Electrophysiology and Arrhythmia Management
+          li Heart Transplantation
+          li Robotic Heart Surgery
+
+    // Hospital 3
+    .hospital
+      h2 Mount Sinai Hospital
+      a(href='/hospitals/mount-sinai-hospital')
+        img(src='/images/SERV3.jpg', alt='Mount Sinai Hospital', class='hospital-image')
+      p Mount Sinai specializes in innovative heart surgery techniques, focusing on patient-centered outcomes.
+      p Services:
+        ul
+          li Transcatheter Aortic Valve Replacement (TAVR)
+          li Adult Congenital Heart Surgery
+          li Vascular and Endovascular Surgery
+          li Pulmonary Thromboendarterectomy
+
+    // Hospital 4
+    .hospital
+      h2 Stanford Health Care
+      a(href='/hospitals/stanford-health-care')
+        img(src='/images/SERV5.jpg', alt='Stanford Health Care', class='hospital-image')
+      p Stanford is known for leading research in heart disease and offering state-of-the-art cardiac care.
+      p Services:
+        ul
+          li Left Ventricular Assist Device (LVAD) Implantation
+          li Complex Coronary Interventions
+          li Advanced Heart Failure Management
+          li Hybrid Coronary Revascularization
+
+    // Hospital 5
+    .hospital
+      h2 Apollo Hospitals
+      a(href='/hospitals/apollo-hospitals')
+        img(src='/images/ind1.jpg', alt='Apollo Hospitals', class='hospital-image')
+      p Apollo Hospitals provides world-class heart surgery and comprehensive cardiac care with cutting-edge technology.
+      p Services:
+        ul
+          li Coronary Artery Bypass Surgery
+          li Heart Valve Repair and Replacement
+          li Heart Transplantation
+          li Minimally Invasive Heart Surgery
+
+    // Hospital 6
+    .hospital
+      h2 Fortis Escorts Heart Institute
+      a(href='/hospitals/fortis-escorts-heart-institute')
+        img(src='/images/ind2.jpg', alt='Fortis Escorts', class='hospital-image')
+      p Fortis Escorts is known for its excellent cardiac care and highly experienced team of cardiac surgeons.
+      p Services:
+        ul
+          li Pediatric Cardiac Surgery
+          li Heart Valve Replacement Surgery
+          li Cardiac Electrophysiology and Pacemaker Implantation
+          li Coronary Angioplasty and Stenting
+
+    // Hospital 7
+    .hospital
+      h2 Narayana Health
+      a(href='/hospitals/narayana-health')
+        img(src='/images/ind3.jpg', alt='Narayana Health', class='hospital-image')
+      p Narayana Health is a leading cardiac center in India, providing affordable and high-quality heart surgeries.
+      p Services:
+        ul
+          li Heart Transplantation
+          li Complex Congenital Heart Surgery
+          li Electrophysiology and Arrhythmia Services
+          li Cardiac Catheterization and Stenting
+
+  // Learn More Section
+  p.learn-more Want to learn more about these hospitals? Explore our platform for additional resources or book a consultation today!

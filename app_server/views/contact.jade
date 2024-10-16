@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Contact Us - CardioConnect
+    link(rel='stylesheet', href='/stylesheets/navbar.css')
+    link(rel='stylesheet', href='/stylesheets/contact.css') // Add custom stylesheet for contact page
+
+  body
+    include layout.jade
+
+    // Header Section
+    header.contact-header
+      h1 Get in Touch
+      p.intro We’d love to hear from you! Please fill out the form below or reach out using the contact details.
+
+    // Contact Form Section
+    section.contact-form
+      h2 Contact Us
+      form(method="post", action="/contact")
+        .form-group
+          label(for="name") Name:
+          input#name(type="text", name="name", required=true, placeholder="Your Name")
+        .form-group
+          label(for="email") Email:
+          input#email(type="email", name="email", required=true, placeholder="Your Email")
+        .form-group
+          label(for="message") Message:
+          textarea#message(name="message", required=true, placeholder="Your Message", rows="5")
+        button(type="submit") Send Message
+
+    // Contact Details Section
+    section.contact-details
+      h2 Contact Information
+      .details
+        p
+          strong Phone:
+          | +1 (216) 444-2200
+        p
+          strong Email:
+          | info@cardioconnect.com
+        p
+          strong Address:
+          | 9500 Euclid Ave, Cleveland, OH 44195, USA
+        p
+          strong Follow Us:
+          ul.social-media
+            li
+              a(href="https://www.facebook.com/CardioConnect", target="_blank") Facebook
+            li
+              a(href="https://twitter.com/CardioConnect", target="_blank") Twitter
+            li
+              a(href="https://www.instagram.com/CardioConnect", target="_blank") Instagram
+
+    // Footer Section
+    footer.footer
+      p &copy; 2024 CardioConnect. All Rights Reserved.

@@ -1,0 +1,224 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #2b6ca3;
+    margin-top: 20px;
+}
+
+p.intro {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px auto 30px;
+    color: #555;
+    max-width: 800px;
+}
+
+/* Hospital Info Section */
+.hospital-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.hospital-img-container {
+    flex: 1 1 40%;
+}
+
+.hospital-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hospital-details {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+.hospital-details h2 {
+    font-size: 28px;
+    color: #2b6ca3;
+}
+
+p.description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+ul.services {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul.services h3 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+ul.services li {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+}
+
+p.contact,
+p.address,
+p.rating {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+p.rating span {
+    color: #ff9800;
+    font-size: 20px;
+}
+
+/* Additional Details Section */
+.additional-details {
+    background-color: #f0f8ff;
+    padding: 40px;
+    margin: 30px 0;
+}
+
+.additional-details h2 {
+    font-size: 26px;
+    color: #2b6ca3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.additional-details p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul.extras {
+    list-style-type: circle;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+ul.extras h3 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+ul.extras li {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Map and Doctors Section */
+.additional-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.map-container,
+.doctors-container {
+    width: 48%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-container h3,
+.doctors-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #2b6ca3;
+}
+
+.doctors-list {
+    list-style: none;
+    padding: 0;
+}
+
+.doctors-list li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.doctors-list h4 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #0077b6;
+}
+
+.doctors-list p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Hover Effects */
+.doctors-list li:hover {
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+/* Footer Styling */
+footer.footer {
+    text-align: center;
+    background-color: #2b6ca3;
+    padding: 20px 0;
+    color: #fff;
+}
+
+footer.footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hospital-info {
+        flex-direction: column;
+    }
+
+    .hospital-img-container,
+    .hospital-details {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+
+    .additional-info-container {
+        flex-direction: column;
+    }
+
+    .map-container,
+    .doctors-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
